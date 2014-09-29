@@ -5,7 +5,8 @@ package MainPackage;
  * Users input a long number
  * Program turns it into a string
  * for loop iterates over that string and does the neccessary math operations
- * if the total % 10 does not equal 
+ * if the total % 10 does not equal last number of number
+ * Card is invalid!
  */
 
 import java.util.Scanner;
