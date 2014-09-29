@@ -5,7 +5,7 @@ package MainPackage;
  * Users input a long number
  * Program turns it into a string
  * for loop iterates over that string and does the neccessary math operations
- * if the total % 10 does not equal last number of number
+ * if the total % 10 does not equal last digit of Credit Card Number then 
  * Card is invalid!
  */
 
