@@ -13,8 +13,6 @@ import java.util.Scanner;
 
 public class CheckDigit {
 	
-	Scanner user_input = new Scanner(System.in);
-	
 	static String integer;
 	static int sum1 = 0;
 	static int sum2 = 0;
