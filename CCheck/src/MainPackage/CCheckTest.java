@@ -1,5 +1,7 @@
 package MainPackage;
 
+import java.util.Scanner;
+
 import junit.framework.TestCase;
 
 public class CCheckTest extends TestCase {

@@ -19,6 +19,7 @@ public class CheckDigit {
 	static String valid = " is Valid";
 	static String notValid = " is not Valid";
 	static int total = 0;
+	private static Scanner user_input;
 	
 	public static int evenDigits(String integer) {
 		
@@ -49,7 +50,6 @@ public class CheckDigit {
 			
 			sum2 += Character.getNumericValue(integer.charAt(j));
 			
-			
 		}
 		
 		total += sum2;
@@ -67,18 +67,39 @@ public class CheckDigit {
 		
 		if (total % 10 == 0) {
 			
-			System.out.println("Credit Card #" + integer + notValid);
-			
-			return false;
+			return true;
 		
 		}
 		
 		else {
 			
-			System.out.println("Credit Card #" + integer + valid);
-			
-			return true;
+			return false;
 		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		user_input = new Scanner(System.in);
+		
+		System.out.println("Type CCard # to Check its First Sum [second dight from the right]: ");
+		CheckDigit.integer = user_input.next();
+		
+		int firstSum1 = CheckDigit.evenDigits(integer);
+		int secondSum2 = CheckDigit.oddDigits(integer);
+		int totalSum = CheckDigit.sumOfBothSums();
+		boolean booleanCheck = CheckDigit.creditCardValidation();
+		
+		System.out.println("The First sum is: " + firstSum1);
+		
+		System.out.println("The Second sum is: " + secondSum2);
+		
+		System.out.println("The Total sum is: " + totalSum);
+		
+		System.out.println("Card Validation is " + booleanCheck);
+		
+		
+		
 		
 	}
 	
